@@ -203,26 +203,6 @@ namespace PRAGMAsLayeredFSKit.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] cfw_loader {
-            get {
-                object obj = ResourceManager.GetObject("cfw_loader", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] cfw_sm {
-            get {
-                object obj = ResourceManager.GetObject("cfw_sm", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
         internal static byte[] EdiZon_nacp {
             get {
                 object obj = ResourceManager.GetObject("EdiZon_nacp", resourceCulture);
@@ -311,31 +291,39 @@ namespace PRAGMAsLayeredFSKit.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to [CFW]
+        ///   Looks up a localized string similar to [                LayeredFS]
         ///kip1=modules/loader.kip
         ///kip1=modules/sm.kip
-        ///[RomFS]
-        ///kernel=modules/romfs/kernel-patched.bin
-        ///kip1=modules/romfs/fs_mitm.kip
-        ///kip1=modules/romfs/loader.kip
-        ///kip1=modules/romfs/sm.kip
-        ///[Clear Log]
         ///kip1=modules/nx-dreport.kip
-        ///[Stock]
+        ///kip1=modules/LayeredFS/fs_mitm.kip
+        ///fuseepatch=1
+        ///[                   CFW]
+        ///kip1=modules/loader.kip
+        ///kip1=modules/sm.kip
+        ///kip1=modules/nx-dreport.kip
+        ///[                  Stock]
+        ///kip1=modules/nx-dreport.kip
         ///[]
+        ///[   Running v3 of tumGER/SDFilesSwitch]
+        ///[ By: tomGER(@tumGER) - LayeredFS-Hekate]
         ///[]
-        ///[   Running modded version of tumGER/SDFilesSwitch]
-        ///[     By: tomGER(@tumGER) and Brawl345]
-        ///[]
-        ///[]
-        ///[]
-        ///[        Reswitched Team&apos;n Discord]
-        ///[      Thog, vgmoose, Adubbz, CTCaer]
-        ///[           WerWolv, thomasnet].
+        ///[  Reswitched, CTCaer, Adubbz, Brawl345]
+        ///[     Thog, vgmoose, StevenMattera]
+        ///[      WerWolv, thomasnet, TheDgtl].
         /// </summary>
         internal static string hekate_ipl {
             get {
                 return ResourceManager.GetString("hekate_ipl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] hekate_lfs {
+            get {
+                object obj = ResourceManager.GetObject("hekate_lfs", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         

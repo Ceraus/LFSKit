@@ -50,6 +50,11 @@
       <DependentUpon>KeyTutorial.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\HandyDandy.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="RCMMode.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,14 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="XCIForm.resx">
       <DependentUpon>XCIForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +99,7 @@
     <None Include="EmbedResources\SDFiles\atmosphere\titles\010000000000100D\exefs\rtld.stub" />
     <None Include="EmbedResources\SDFiles\hbmenu.nro" />
     <None Include="EmbedResources\SDFiles\hekate_ipl.ini" />
+    <None Include="EmbedResources\SDFiles\modules\LayeredFS\fs_mitm.kip" />
     <None Include="EmbedResources\SDFiles\modules\loader.kip" />
     <None Include="EmbedResources\SDFiles\modules\nx-dreport.kip" />
     <None Include="EmbedResources\SDFiles\modules\romfs\fs_mitm.kip" />

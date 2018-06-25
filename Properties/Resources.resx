@@ -172,15 +172,6 @@
   <data name="EdiZon_nro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\EmbedResources\SDFiles\switch\EdiZon\EdiZon.nro;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="fs_loader" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\EmbedResources\SDFiles\modules\romfs\loader.kip;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="fs_mitm" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\EmbedResources\SDFiles\modules\romfs\fs_mitm.kip;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="fs_sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\EmbedResources\SDFiles\modules\romfs\sm.kip;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="GagOrder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\EmbedResources\SDFiles\switch\GagOrder.nro;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -222,5 +213,14 @@
   </data>
   <data name="TegraRcmSmash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\EmbedResources\RCM Mode and Payloads\TegraRcmSmash.exe;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fs_loader" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\EmbedResources\SDFiles\modules\loader.kip;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fs_mitm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\EmbedResources\SDFiles\modules\LayeredFS\fs_mitm.kip;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fs_sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\EmbedResources\SDFiles\modules\sm.kip;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

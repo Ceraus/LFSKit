@@ -39,13 +39,11 @@ namespace PRAGMAsLayeredFSKit
                         "atmosphere/titles/010000000000100D/exefs/main.npdm",
                         "atmosphere/titles/010000000000100D/exefs/rtld.stub",
                         "modules/",
-                        "modules/romfs/",
-                        "modules/romfs/fs_mitm.kip",
-                        "modules/romfs/loader.kip",
-                        "modules/romfs/sm.kip",
+                        "modules/LayeredFS/",
+                        "modules/LayeredFS/fs_mitm.kip",
                         "modules/loader.kip",
-                        "modules/nx-dreport.kip",
                         "modules/sm.kip",
+                        "modules/nx-dreport.kip",
                         "switch/",
                         "switch/appstore/",
                         "switch/appstore/res/",
@@ -98,66 +96,60 @@ namespace PRAGMAsLayeredFSKit
                                     resource = Resources.fs_sm;
                                     break;
                                 case 7:
-                                    resource = Resources.cfw_loader;
-                                    break;
-                                case 8:
                                     resource = Resources.nx_dreport;
                                     break;
-                                case 9:
-                                    resource = Resources.cfw_sm;
-                                    break;
-                                case 10:
+                                case 8:
                                     resource = (byte[])imgConverter.ConvertTo(Resources.as_default, typeof(byte[]));
                                     break;
-                                case 11:
+                                case 9:
                                     resource = (byte[])imgConverter.ConvertTo(Resources.as_GET, typeof(byte[]));
                                     break;
-                                case 12:
+                                case 10:
                                     resource = (byte[])imgConverter.ConvertTo(Resources.as_icon_jpg, typeof(byte[]));
                                     break;
-                                case 13:
+                                case 11:
                                     resource = (byte[])imgConverter.ConvertTo(Resources.as_icon_png, typeof(byte[]));
                                     break;
-                                case 14:
+                                case 12:
                                     resource = (byte[])imgConverter.ConvertTo(Resources.as_icon_small, typeof(byte[]));
                                     break;
-                                case 15:
+                                case 13:
                                     resource = (byte[])imgConverter.ConvertTo(Resources.as_INSTALLED, typeof(byte[]));
                                     break;
-                                case 16:
+                                case 14:
                                     resource = (byte[])imgConverter.ConvertTo(Resources.as_LOCAL, typeof(byte[]));
                                     break;
-                                case 17:
+                                case 15:
                                     resource = (byte[])imgConverter.ConvertTo(Resources.as_noscreen, typeof(byte[]));
                                     break;
-                                case 18:
+                                case 16:
                                     resource = (byte[])imgConverter.ConvertTo(Resources.as_popup, typeof(byte[]));
                                     break;
-                                case 19:
+                                case 17:
                                     resource = Resources.as_productsans;
                                     break;
-                                case 20:
+                                case 18:
                                     resource = (byte[])imgConverter.ConvertTo(Resources.as_shade, typeof(byte[]));
                                     break;
-                                case 21:
+                                case 19:
                                     resource = (byte[])imgConverter.ConvertTo(Resources.as_UPDATE, typeof(byte[]));
                                     break;
-                                case 22:
+                                case 20:
                                     resource = Resources.appstore;
                                     break;
-                                case 23:
+                                case 21:
                                     resource = Resources.EdiZon_nacp;
                                     break;
-                                case 24:
+                                case 22:
                                     resource = Resources.EdiZon_nro;
                                     break;
-                                case 25:
+                                case 23:
                                     resource = Resources.GagOrder;
                                     break;
-                                case 26:
+                                case 24:
                                     resource = Resources.hbmenu;
                                     break;
-                                case 27:
+                                case 25:
                                     resource = Encoding.ASCII.GetBytes(Resources.hekate_ipl);
                                     break;
                             }
@@ -235,6 +227,8 @@ namespace PRAGMAsLayeredFSKit
         private void OpenXCIDecrypterButton_Click(object sender, EventArgs e) {
             new XCIForm().Show();
         }
-        
+        private void button5_Click(object sender, EventArgs e) {
+            new RCMMode().Show();
+        }
     }
 }
