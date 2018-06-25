@@ -170,8 +170,5 @@
   <ItemGroup>
     <None Include="EmbedResources\hactool\hactool.exe" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="EmbedResources\kernalpatches\kernelpatches.exe" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

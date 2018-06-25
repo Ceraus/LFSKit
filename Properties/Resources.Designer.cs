@@ -330,16 +330,6 @@ namespace PRAGMAsLayeredFSKit.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] kernelpatches {
-            get {
-                object obj = ResourceManager.GetObject("kernelpatches", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
         internal static byte[] libmbedcrypto {
             get {
                 object obj = ResourceManager.GetObject("libmbedcrypto", resourceCulture);

@@ -28,11 +28,7 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
@@ -40,64 +36,27 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 51);
+            this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(365, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Install Hekate-IPL, CTCaer Hekate Mod w/ LFS Support";
+            this.button1.Text = "Install SD Files V3";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.sdfilesmodbutton_Click);
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 12);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(365, 33);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "You need to get the proper SD Files with LayeredFS support before continuing, use" +
-    " the button below.";
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 119);
+            this.button2.Location = new System.Drawing.Point(12, 41);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(365, 23);
             this.button2.TabIndex = 4;
-            this.button2.Text = "Get Keys.ini aswell as BOOT0 and BCPKG2-1-Normal-Main";
+            this.button2.Text = "Get Keys.ini - Required for XCI/NCA Decrypting";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.OpenKeyTutorialButton_Click);
             // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Location = new System.Drawing.Point(12, 80);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(365, 33);
-            this.richTextBox2.TabIndex = 5;
-            this.richTextBox2.Text = "You also need to get your Switch\'s Keys.ini and BCPKG2-1-Normal-Main so we can pa" +
-    "tch your kernel for LayeredFS Support and decrypt xci and ncas.";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(13, 149);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(364, 23);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Trim, Extract, Decrypt and Patch kernel.bin from BCPKG2-1-Normal-Main";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.PatchKernelButton_Click);
-            // 
-            // richTextBox3
-            // 
-            this.richTextBox3.Location = new System.Drawing.Point(13, 178);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(364, 40);
-            this.richTextBox3.TabIndex = 7;
-            this.richTextBox3.Text = "You now have full LayeredFS support. All you need now is to setup decrypted .XCI " +
-    "titleid folders for backup loading :O";
-            // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(156, 244);
+            this.button4.Location = new System.Drawing.Point(156, 84);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(221, 23);
             this.button4.TabIndex = 8;
@@ -108,7 +67,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 227);
+            this.label1.Location = new System.Drawing.Point(12, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 13);
             this.label1.TabIndex = 9;
@@ -116,7 +75,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(13, 244);
+            this.button5.Location = new System.Drawing.Point(13, 84);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(137, 23);
             this.button5.TabIndex = 10;
@@ -128,18 +87,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(389, 280);
+            this.ClientSize = new System.Drawing.Size(389, 119);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.richTextBox3);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "PRAGMA\'s LFS Kit v1.3";
+            this.Text = "PRAGMA\'s LFS Kit v1.4";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,11 +103,7 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.RichTextBox richTextBox3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button5;

@@ -163,64 +163,6 @@ namespace PRAGMAsLayeredFSKit
                 }
             }
         }
-        #region Patch Kernel
-        private void PatchKernelButton_Click(object sender, EventArgs e)
-        {
-            string pkg2 = "BCPKG2-1-Normal-Main";
-            if (!FileStuff.doesFileExist("keys.ini") || !FileStuff.doesFileExist(pkg2)) {
-                return;
-            }
-            #region Remove Leading 0's from BCPKG2-1-Normal-Main and save as pkg2NoLeading0 then delete the original
-            byte[] hex = File.ReadAllBytes(pkg2);
-            int indexesOf0 = 0;
-            while (hex[indexesOf0] == 0x00) {
-                indexesOf0++;
-            }
-            File.WriteAllBytes("pkg2NoLeading0", hex.Skip(indexesOf0).ToArray());
-            File.Delete(pkg2);
-            #endregion
-            #region Extract hactool
-            FileStuff.extractHactool();
-            #endregion
-            #region Use hactool to decrypt pkg2NoLeading0 to Kernel.bin
-            FileStuff.executeFile("hactool.exe", "-tpk21 -k keys.ini --outdir pkg2Decrypted \"pkg2NoLeading0\"");
-            #endregion
-            #region Delete hactool
-            FileStuff.deleteHactool();
-            #endregion
-            #region Delete Decrypted.bin and INI1.bin, not needed
-            File.Delete("pkg2Decrypted/Decrypted.bin");
-            File.Delete("pkg2Decrypted/INI1.bin");
-            #endregion
-            #region Rename Kernel.bin to lowercase and move it out of pkg2Decrypted
-            File.Move("pkg2Decrypted/Kernel.bin", "kernel.bin");
-            #endregion
-            #region Delete Empty pkg2Decrypted as its no longer needed
-            Directory.Delete("pkg2Decrypted");
-            #endregion
-            #region Use kernelpatches.exe to patch the kernel, then delete kernelpatches.exe
-            File.WriteAllBytes("kernelpatches.exe", Resources.kernelpatches);
-            Process.Start("kernelpatches.exe").WaitForExit();
-            File.Delete("kernelpatches.exe");
-            #endregion
-            #region Delete the original kernel.bin and pkg2noleading0
-            File.Delete("kernel.bin");
-            File.Delete("pkg2NoLeading0");
-            #endregion
-            #region Move kernel-patched.bin to /modules/romfs/kernel-patched.bin
-            MessageBox.Show("Insert your Switch's SDCard into your PC and then hit OK.");
-            using (FolderBrowserDialog fbd = new FolderBrowserDialog()) {
-                fbd.RootFolder = Environment.SpecialFolder.MyComputer;
-                fbd.Description = "I will need to know the location of your SD Card's ROOT! (So if its D:/ drive, just select D:/ and hit OK)";
-                while (fbd.ShowDialog() != DialogResult.OK || string.IsNullOrWhiteSpace(fbd.SelectedPath)) {
-                    MessageBox.Show("You need to select a directory to continue.");
-                }
-                File.Move("kernel-patched.bin", Path.Combine(fbd.SelectedPath, "modules", "romfs", "kernel-patched.bin"));
-            }
-            #endregion
-            MessageBox.Show("Done!");
-        }
-        #endregion
         private void OpenKeyTutorialButton_Click(object sender, EventArgs e) {
             new KeyTutorial().Show();
         }
