@@ -139,7 +139,7 @@
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "PRAGMA\'s LFS Kit v1.2";
+            this.Text = "PRAGMA\'s LFS Kit v1.3";
             this.ResumeLayout(false);
             this.PerformLayout();
 

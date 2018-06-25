@@ -94,6 +94,7 @@
     </EmbeddedResource>
     <None Include="EmbedResources\RCM Mode and Payloads\biskeydump.bin" />
     <None Include="EmbedResources\RCM Mode and Payloads\hekate_ctcaer.bin" />
+    <None Include="EmbedResources\RCM Mode and Payloads\hekate_lfs.bin" />
     <None Include="EmbedResources\SDFiles\atmosphere\titles\010000000000100D\exefs\main" />
     <None Include="EmbedResources\SDFiles\atmosphere\titles\010000000000100D\exefs\main.npdm" />
     <None Include="EmbedResources\SDFiles\atmosphere\titles\010000000000100D\exefs\rtld.stub" />

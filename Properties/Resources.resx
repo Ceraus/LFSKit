@@ -160,12 +160,6 @@
   <data name="biskeydump" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\EmbedResources\RCM Mode and Payloads\biskeydump.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="cfw_loader" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\EmbedResources\SDFiles\modules\loader.kip;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cfw_sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\EmbedResources\SDFiles\modules\sm.kip;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="EdiZon_nacp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\EmbedResources\SDFiles\switch\EdiZon\EdiZon.nacp;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -222,5 +216,8 @@
   </data>
   <data name="fs_sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\EmbedResources\SDFiles\modules\sm.kip;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hekate_lfs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\EmbedResources\RCM Mode and Payloads\hekate_lfs.bin;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
